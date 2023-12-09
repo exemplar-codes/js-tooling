@@ -17,27 +17,28 @@ neither intend to change code. Just displace and refactor.
 
 ## Actual tools (nouns)
 
-1. Formatter - Prettier is opinionated (low config)
+1. Formatter - [Prettier](https://prettier.io/) is opinionated (low config)
    1. Form factor: works as an editor plugin. Has an independent CLI too
    2. Easy to use, no setup.
    3. Can auto-format files.
-2. Linter - eslint. Can lint static files only (deliberate).
+2. Linter - [eslint](https://eslint.org/). Can lint static files only (deliberate).
    1. Form factor: CLI tool, pass files to lint.
    2. Simple usage is easy.
    3. Highly configurable. But doesn't need much config due to existence of good presets. A good preset + some exceptions if needed go a long way.
    4. Normal usage generally _requires_ an observer-presenter layer, i.e. a "project files changed" observer generates a stream and passes it to eslint, which returns the results back, which get presented in the terminal, browser console or mobile device - whatever you're developing. Example of observer-presenter layers: nodemon, create-react-app dev server, vscode ESLint plugin.
    5. Can auto-fix files in many scenarios.
-3. Bundler - webpack.
+3. Bundler - [webpack](https://webpack.js.org/).
    1. Form factor - CLI tool.
    2. Easy to use in the simple scenario.
    3. Highly configurable and configuration is needed for medium to complex projects
-4. Transpiler - babel
+4. Transpiler - [babel](https://babeljs.io/)
    1. Form factor - CLI tool. Input file to output file.
    2. Args: Can specify target JS spec. Inputs non-exact enums. or exact specs, whatever you like.
    3. Handles JSX to JS too. And many other source, target combinations
-5. Minification - uglifjs
+5. Minification - [uglifjs](https://github.com/mishoo/UglifyJS/)
    1. Form factor: simple CLI, input file to output file.
    2. Has option to generate corresponding source map(s).
+   3. Gotcha: package name is hyphenated ["uglify-js"](https://www.npmjs.com/package/uglify-js), but the CLI command has no hyphens `uglifyjs`
 
 ## Fronend vs backend relevance
 
