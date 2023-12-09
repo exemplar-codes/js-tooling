@@ -31,6 +31,7 @@ neither intend to change code. Just displace and refactor.
    1. Form factor - CLI tool.
    2. Easy to use in the simple scenario.
    3. Highly configurable and configuration is needed for medium to complex projects
+   4. React Native - [metro](https://metrobundler.dev/) for RN, no config needed. Not many customization options.
 4. Transpiler - [babel](https://babeljs.io/)
    1. Form factor - CLI tool. Input file to output file.
    2. Args: Can specify target JS spec. Inputs non-exact enums. or exact specs, whatever you like.
@@ -40,7 +41,7 @@ neither intend to change code. Just displace and refactor.
    2. Has option to generate corresponding source map(s).
    3. Gotcha: package name is hyphenated ["uglify-js"](https://www.npmjs.com/package/uglify-js), but the CLI command has no hyphens `uglifyjs`
 
-## Fronend vs backend relevance
+## Frontend vs backend relevance
 
 Frontend projects usually need all steps.
 
