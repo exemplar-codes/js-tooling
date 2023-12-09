@@ -13,7 +13,7 @@ neither intend to change code. Just displace and refactor.
 
 3. Bundler - combine all JS files to generate a single one, essentially. Traditonal browser requirement. Does optimizations like tree shaking (dead code removal). Realistically, takes care of non-JS assets and linkages too.
 4. Transpiler - combine modern/fancy JS into lowest-denominator-compatible JS. Originally meant for IE and old browsers when ES6 came about. JSX to JS also happens in this step, if needed.
-5. Minification - decrease bundle size by removing whitespace, changing variable names. Optionally, leave some cryptic tokens in output and generate a "source map". When the capable runtime is presented with both the minified file and source map, it can point out corresponding parts, with step-through precision. very useful for debugging.
+5. Minification - decrease bundle size by removing whitespace, changing variable names. Optionally, leaves some cryptic tokens in output and generates a "source map". When the capable runtime is presented with both the minified file and source map, it can point out corresponding parts, with step-through precision. very useful for debugging.
 
 ## Actual tools (nouns)
 
